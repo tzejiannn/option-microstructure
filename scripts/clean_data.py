@@ -1,5 +1,5 @@
 import pandas as pd
-calls = pd.read_csv("option_data/AAPL_call_options_Jul 11, 2025.csv")
+import os
 
 def clean_data(df):
 
@@ -41,5 +41,26 @@ def clean_data(df):
     return df
 
 if __name__ == "__main__":
-    df_clean = clean_data(calls)
-    df_clean.to_csv(f"AAPL_calls_clean.csv", index=False)
+    raw_folder = "raw"
+    clean_folder = "clean"
+    os.makedirs(clean_folder, exist_ok=True)
+
+    for filename in os.listdir(raw_folder):
+        if filename.endswith(".csv"):
+            raw_filepath = os.path.join(raw_folder, filename)
+
+            try:
+                df_raw = pd.read_csv(raw_filepath)
+                df_clean = clean_data(df_raw)
+                expiry = df_clean['expiry'].iloc[0].strftime('%Y-%m-%d')
+
+                #Change name for option type
+                save_filename = f"[CLEAN]_AAPL__{expiry}.csv"
+                save_path = os.path.join(clean_folder, save_filename)
+                df_clean.to_csv(save_path, index=False)
+                print(f"file saved: {save_filename}")
+
+            except Exception as e:
+                print(f"failed {filename}: {e}")  
+
+
