@@ -2,24 +2,20 @@
   <h1>AAPL Option Market Microstructure Analysis</h1>
 
   <h2>1. Project Overview</h2>
-  <p>This project analyzes AAPL option price data across multiple expiry dates to study liquidity, bid-ask spreads, volume, open interest, and moneyness. The goal is to uncover structural patterns in option pricing and trading behavior on a highly liquid stock.</p>
+  <p>This project aims to conduct a cross-sectional analysis of an option across multiple expiry dates to study liquidity, bid-ask spreads, volume, open interest, and moneyness. The goal is to uncover structural patterns in option pricing and trading behavior on a highly liquid stock </p>
   
   <h2>Data Collection &amp; Analysis Scope</h2>
-  <p>Data was collected from Yahoo Finance using **Selenium** to automate browser interaction and scrape option chain data for multiple expiry dates on **July 8th, 2024**.The dataset includes both call and put options with variables such as strike price, bid, ask, volume, open interest, implied volatility, and expiry dates. The underlying AAPL stock price on the collection date (~$211) is used for moneyness calculations.</p>
-  <p>Scripts for data scraping and combining CSV files are provided in the <code>scripts/</code> folder.</p>
+  <p>Data was collected from Yahoo Finance using Selenium to automate browser interaction and scrape option chain data for multiple expiry dates.
+  <p>Scripts for data scraping and combining CSV files are provided in the <code>scripts</code> folder.</p>
+  
+  <p>This project collects AAPL options data for multiple expiry dates, all captured on <strong>July 8th, 2024</strong>, when the underlying stock price was approximately <strong>$211</strong>.</p>
+  <p><strong>Note:</strong> Since the data snapshot is from a single trading day, the analysis focuses on the option market microstructure <em>as it existed on that day</em>. This means:</p>
+  <ul>
+    <li>Moneyness and pricing are calculated relative to the spot price on July 8th.</li>
+    <li>Time-to-expiry and liquidity patterns reflect this fixed point in time.</li>
+  </ul>
 
-
-
-<p>This project collects AAPL options data for multiple expiry dates, all captured on <strong>July 8th, 2024</strong>, when the underlying stock price was approximately <strong>$211</strong>.</p>
-
-<p><strong>Note:</strong> Since the data snapshot is from a single trading day, the analysis focuses on the option market microstructure <em>as it existed on that day</em>. This means:</p>
-
-<ul>
-  <li>Moneyness and pricing are calculated relative to the spot price on July 8th.</li>
-  <li>Time-to-expiry and liquidity patterns reflect this fixed point in time.</li>
-</ul>
-
-<p>For a more dynamic or longitudinal analysis of option behavior over time, collecting data across multiple dates would be necessary. However, this project’s scope is a <em>cross-sectional</em> analysis of option market characteristics on a specific date.</p>
+  <p>For a more dynamic or longitudinal analysis of option behavior over time, collecting data across multiple dates would be necessary. However, this project’s scope is a <em>cross-sectional</em> analysis of option market characteristics on a specific date.</p>
 
 
   <h2>3. Data Description</h2>
@@ -49,8 +45,8 @@
   </ul>
 
   <h2>5. Usage</h2>
-  <p>Run the Jupyter notebooks in the <code>notebooks/</code> folder to reproduce data analysis and visualizations.<br />
-  To update or extend data, use the Python scripts in <code>scripts/</code> for scraping and combining option data.</p>
+  <p>Run the Jupyter notebooks in the <code>notebooks</code> folder to reproduce data analysis and visualizations.<br />
+  To update or extend data, use the Python scripts in <code>scripts</code> for scraping, cleaning and combining option data.</p>
 
   <h2>6. Results &amp; Visualizations</h2>
   <p>Includes boxplots of spreads by moneyness, heatmaps of volume by strike and expiry, and scatterplots analyzing liquidity measures.</p>
