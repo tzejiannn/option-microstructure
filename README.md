@@ -85,7 +85,7 @@
   <h2>9. Folder Structure</h2>
   <pre>
 option-microstructure/
-├── data/                   # Raw, cleaned and combined data files (CSV)
+├── option_data/                   # Raw, cleaned and combined data files (CSV)
 ├── notebooks/              # Jupyter notebooks for EDA and visualization
 ├── scripts/                # Data scraping and processing scripts
 ├── README.md
