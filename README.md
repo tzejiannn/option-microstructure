@@ -60,12 +60,13 @@
 
   <h2>8. Dependencies</h2>
   <ul>
-    <li>Python 3.8+</li>
+    <li>Python 3.10+</li>
     <li>pandas</li>
     <li>numpy</li>
     <li>matplotlib</li>
     <li>seaborn</li>
-    <li>yahoo_fin</li>
+    <li>selenium</li>
+    <li>os</li>
   </ul>
   <p>See <code>requirements.txt</code> for exact versions.</p>
 
