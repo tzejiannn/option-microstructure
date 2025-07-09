@@ -16,7 +16,7 @@
 <p>The combination of these factors, along with AAPL’s significant market presence and regular price fluctuations, provides an ideal environment to examine option market dynamics in a realistic and meaningful context.</p>
 
   
-  <h2>Data Collection &amp; Analysis Scope</h2>
+  <h2>2. Data Collection &amp; Analysis Scope</h2>
   <p>Data was collected from Yahoo Finance using Selenium to automate browser interaction and scrape option chain data for multiple expiry dates.
   <p>Scripts for data scraping and combining CSV files are provided in the <code>scripts</code> folder.</p>
   
