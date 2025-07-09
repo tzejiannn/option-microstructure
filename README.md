@@ -8,7 +8,7 @@
   <p>Data was collected from Yahoo Finance using Selenium to automate browser interaction and scrape option chain data for multiple expiry dates.
   <p>Scripts for data scraping and combining CSV files are provided in the <code>scripts</code> folder.</p>
   
-  <p>This project collects AAPL options data for multiple expiry dates, all captured on <strong>July 8th, 2024</strong>, when the underlying stock price was approximately <strong>$211</strong>.</p>
+  <p>This project collects AAPL options data for multiple expiry dates, all captured on <strong>July 8th, 2024</strong>, when the underlying stock closing price was approximately <strong>$210.01</strong>.</p>
   <p><strong>Note:</strong> Since the data snapshot is from a single trading day, the analysis focuses on the option market microstructure <em>as it existed on that day</em>. This means:</p>
   <ul>
     <li>Moneyness and pricing are calculated relative to the spot price on July 8th.</li>
