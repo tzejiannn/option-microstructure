@@ -2,7 +2,19 @@
   <h1>AAPL Option Market Microstructure Analysis</h1>
 
   <h2>1. Project Overview</h2>
-  <p>This project aims to conduct a cross-sectional analysis of an option across multiple expiry dates to study liquidity, bid-ask spreads, volume, open interest, and moneyness. The goal is to uncover structural patterns in option pricing and trading behavior on a highly liquid stock </p>
+<p>This project conducts a cross-sectional analysis of AAPL options across multiple expiry dates, focusing on key market microstructure features such as liquidity, bid-ask spreads, volume, open interest, and moneyness.</p>
+
+<p><strong>The primary objective is to identify structural patterns in option pricing and trading behavior within a highly liquid market.</strong></p>
+
+<p>Apple Inc. (AAPL) was selected as the focus of this study for several reasons:</p>
+<ul>
+  <li>High liquidity - ensures robust and reliable data for analysis</li>
+  <li>Widespread trading activity - reflecting diverse market participation</li>
+  <li>A broad spectrum of available expiry dates and strike prices - allows for comprehensive exploration of option characteristics</li>
+</ul>
+
+<p>The combination of these factors, along with AAPL’s significant market presence and regular price fluctuations, provides an ideal environment to examine option market dynamics in a realistic and meaningful context.</p>
+
   
   <h2>Data Collection &amp; Analysis Scope</h2>
   <p>Data was collected from Yahoo Finance using Selenium to automate browser interaction and scrape option chain data for multiple expiry dates.
